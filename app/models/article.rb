@@ -1,4 +1,9 @@
 class Article < ActiveRecord::Base
-validates :title, presence: :true
+
 has_many :comments
+
+	
+	validates :title, :description, presence: :true
+
+
 end
